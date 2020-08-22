@@ -21,5 +21,10 @@ namespace ModernGUI_V3
         {
             this.Close();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
