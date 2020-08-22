@@ -24,3 +24,16 @@ C:\Users\cesar\Desktop\Ciclo II 2020\Conta\Tarea Contabilidad\Pago A Empleados v
 C:\Users\cesar\Desktop\Ciclo II 2020\Conta\Tarea Contabilidad\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.CoreCompileInputs.cache
 C:\Users\cesar\Desktop\Ciclo II 2020\Conta\Tarea Contabilidad\Pago A Empleados v1\obj\Debug\ModernGUI_V3.exe
 C:\Users\cesar\Desktop\Ciclo II 2020\Conta\Tarea Contabilidad\Pago A Empleados v1\obj\Debug\ModernGUI_V3.pdb
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.exe.config
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.exe
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.pdb
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csprojAssemblyReference.cache
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form1.resources
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form2.resources
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form3.resources
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.FormPrincipal.resources
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Properties.Resources.resources
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.GenerateResource.cache
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.CoreCompileInputs.cache
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.exe
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.pdb
