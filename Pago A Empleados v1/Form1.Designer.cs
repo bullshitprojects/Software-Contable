@@ -58,6 +58,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.txtTotalIngresos = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtCargo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.resultado.SuspendLayout();
@@ -184,6 +186,8 @@
             // resultado
             // 
             this.resultado.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.resultado.Controls.Add(this.label12);
+            this.resultado.Controls.Add(this.txtCargo);
             this.resultado.Controls.Add(this.cmbMes);
             this.resultado.Controls.Add(this.label11);
             this.resultado.Controls.Add(this.label10);
@@ -192,10 +196,10 @@
             this.resultado.Controls.Add(this.btnGenerarBoleta);
             this.resultado.Controls.Add(this.label6);
             this.resultado.Controls.Add(this.txtsalarioNeto);
-            this.resultado.Location = new System.Drawing.Point(152, 269);
+            this.resultado.Location = new System.Drawing.Point(150, 249);
             this.resultado.Margin = new System.Windows.Forms.Padding(2);
             this.resultado.Name = "resultado";
-            this.resultado.Size = new System.Drawing.Size(458, 159);
+            this.resultado.Size = new System.Drawing.Size(458, 179);
             this.resultado.TabIndex = 30;
             this.resultado.Visible = false;
             // 
@@ -240,7 +244,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(30, 64);
+            this.label10.Location = new System.Drawing.Point(30, 61);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(87, 20);
@@ -251,7 +255,7 @@
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(137, 61);
+            this.txtNombre.Location = new System.Drawing.Point(137, 58);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(294, 25);
@@ -265,7 +269,7 @@
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLimpiar.Location = new System.Drawing.Point(287, 115);
+            this.btnLimpiar.Location = new System.Drawing.Point(287, 136);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(80, 29);
@@ -282,7 +286,7 @@
             this.btnGenerarBoleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerarBoleta.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerarBoleta.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnGenerarBoleta.Location = new System.Drawing.Point(88, 115);
+            this.btnGenerarBoleta.Location = new System.Drawing.Point(88, 136);
             this.btnGenerarBoleta.Margin = new System.Windows.Forms.Padding(2);
             this.btnGenerarBoleta.Name = "btnGenerarBoleta";
             this.btnGenerarBoleta.Size = new System.Drawing.Size(170, 29);
@@ -466,6 +470,28 @@
             this.txtTotalIngresos.Size = new System.Drawing.Size(90, 25);
             this.txtTotalIngresos.TabIndex = 24;
             // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(30, 99);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(60, 20);
+            this.label12.TabIndex = 34;
+            this.label12.Text = "Cargo:";
+            // 
+            // txtCargo
+            // 
+            this.txtCargo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtCargo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCargo.Location = new System.Drawing.Point(137, 96);
+            this.txtCargo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(294, 25);
+            this.txtCargo.TabIndex = 33;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -522,5 +548,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtCargo;
     }
 }
