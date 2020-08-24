@@ -89,7 +89,7 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(924, 11);
+            this.button1.Location = new System.Drawing.Point(924, 9);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(71, 25);
@@ -447,7 +447,7 @@
             this.panel4.Controls.Add(this.deducciones);
             this.panel4.Controls.Add(this.semestre2);
             this.panel4.Controls.Add(this.panel3);
-            this.panel4.Location = new System.Drawing.Point(3, 41);
+            this.panel4.Location = new System.Drawing.Point(1, 41);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1003, 458);
             this.panel4.TabIndex = 34;

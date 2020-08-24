@@ -60,6 +60,35 @@ namespace ModernGUI_V3
                 return 0;
             }
         }
+        // Calcular Renta aguinaldo
+        public double CalcularRentaAguinaldo(double ingresos, double aguinaldoGravado)
+        {
+            double rentaImponible = (ingresos - (CalcularISSS(ingresos) + CalcularAFP(ingresos))+ aguinaldoGravado) ;
+
+            if (rentaImponible > 0.01 & rentaImponible <= 472)
+            {
+                return 0;
+            }
+            else if (rentaImponible > 472 & rentaImponible <= 895.24)
+            {
+                double renta = ((rentaImponible - 472) * 0.10) + 17.67;
+                return renta;
+            }
+            else if (rentaImponible > 895.25 & rentaImponible <= 2038.10)
+            {
+                double renta = ((rentaImponible - 895.24) * 0.20) + 60;
+                return renta;
+            }
+            else if (rentaImponible > 2038.11)
+            {
+                double renta = ((rentaImponible - 2038.10) * 0.30) + 288.57;
+                return renta;
+            }
+            else
+            {
+                return 0;
+            }
+        }
 
         //Metodo para recalculo de la Renta 
         public ArrayList Recalculo(double remuneracionGravada, int calculo)

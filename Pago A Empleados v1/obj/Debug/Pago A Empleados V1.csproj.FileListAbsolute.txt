@@ -89,3 +89,31 @@ C:\Users\Hector Amaya\Documents\Ciclo 2 2020\Contabilidad\Software-Contable\Pago
 C:\Users\Hector Amaya\Documents\Ciclo 2 2020\Contabilidad\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.GenerateResource.cache
 C:\Users\Hector Amaya\Documents\Ciclo 2 2020\Contabilidad\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.exe
 C:\Users\Hector Amaya\Documents\Ciclo 2 2020\Contabilidad\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.pdb
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\Common.Logging.Core.dll
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\Common.Logging.dll
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.barcodes.dll
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.forms.dll
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.io.dll
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.kernel.dll
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.layout.dll
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.pdfa.dll
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.sign.dll
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.styledxmlparser.dll
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.svg.dll
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\Common.Logging.pdb
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\Common.Logging.xml
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\Common.Logging.Core.pdb
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\Common.Logging.Core.xml
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.barcodes.xml
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.forms.xml
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.io.xml
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.kernel.xml
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.layout.xml
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.pdfa.xml
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.sign.xml
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.styledxmlparser.xml
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.svg.xml
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.CopyComplete
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form4.resources
