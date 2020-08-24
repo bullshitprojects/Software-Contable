@@ -58,6 +58,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -76,7 +77,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.txtSubTotal = new System.Windows.Forms.TextBox();
             this.txtPorcentaje = new System.Windows.Forms.TextBox();
-            this.btnLimpiar = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.semestre2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -101,6 +101,7 @@
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel3.BackColor = System.Drawing.SystemColors.Window;
             this.panel3.Controls.Add(this.txt5);
             this.panel3.Controls.Add(this.txt4);
             this.panel3.Controls.Add(this.label1);
@@ -113,7 +114,7 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.txt3);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(73, 150);
+            this.panel3.Location = new System.Drawing.Point(143, 146);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(212, 280);
@@ -254,6 +255,7 @@
             // semestre2
             // 
             this.semestre2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.semestre2.BackColor = System.Drawing.SystemColors.Window;
             this.semestre2.Controls.Add(this.txt11);
             this.semestre2.Controls.Add(this.txt10);
             this.semestre2.Controls.Add(this.label6);
@@ -266,7 +268,7 @@
             this.semestre2.Controls.Add(this.label11);
             this.semestre2.Controls.Add(this.txt9);
             this.semestre2.Controls.Add(this.label12);
-            this.semestre2.Location = new System.Drawing.Point(289, 150);
+            this.semestre2.Location = new System.Drawing.Point(359, 146);
             this.semestre2.Margin = new System.Windows.Forms.Padding(2);
             this.semestre2.Name = "semestre2";
             this.semestre2.Size = new System.Drawing.Size(214, 280);
@@ -433,6 +435,10 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.SystemColors.Window;
             this.panel4.Controls.Add(this.btnLimpiar);
             this.panel4.Controls.Add(this.btnCalcular);
             this.panel4.Controls.Add(this.panel6);
@@ -440,10 +446,27 @@
             this.panel4.Controls.Add(this.deducciones);
             this.panel4.Controls.Add(this.semestre2);
             this.panel4.Controls.Add(this.panel3);
-            this.panel4.Location = new System.Drawing.Point(3, 37);
+            this.panel4.Location = new System.Drawing.Point(3, 41);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1003, 462);
+            this.panel4.Size = new System.Drawing.Size(1003, 458);
             this.panel4.TabIndex = 34;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnLimpiar.Location = new System.Drawing.Point(600, 107);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(153, 29);
+            this.btnLimpiar.TabIndex = 36;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnCalcular
             // 
@@ -453,7 +476,7 @@
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcular.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCalcular.Location = new System.Drawing.Point(350, 111);
+            this.btnCalcular.Location = new System.Drawing.Point(420, 107);
             this.btnCalcular.Margin = new System.Windows.Forms.Padding(2);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(153, 29);
@@ -465,9 +488,10 @@
             // panel6
             // 
             this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel6.BackColor = System.Drawing.SystemColors.Window;
             this.panel6.Controls.Add(this.radioButton2);
             this.panel6.Controls.Add(this.radioButton1);
-            this.panel6.Location = new System.Drawing.Point(73, 53);
+            this.panel6.Location = new System.Drawing.Point(143, 49);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(430, 48);
             this.panel6.TabIndex = 35;
@@ -503,7 +527,7 @@
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(75, 116);
+            this.label21.Location = new System.Drawing.Point(145, 112);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(257, 18);
@@ -513,6 +537,7 @@
             // deducciones
             // 
             this.deducciones.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.deducciones.BackColor = System.Drawing.SystemColors.Window;
             this.deducciones.Controls.Add(this.label18);
             this.deducciones.Controls.Add(this.txtExceso);
             this.deducciones.Controls.Add(this.txtTotalRemuneraciones);
@@ -525,7 +550,7 @@
             this.deducciones.Controls.Add(this.label17);
             this.deducciones.Controls.Add(this.txtSubTotal);
             this.deducciones.Controls.Add(this.txtPorcentaje);
-            this.deducciones.Location = new System.Drawing.Point(531, 150);
+            this.deducciones.Location = new System.Drawing.Point(601, 146);
             this.deducciones.Margin = new System.Windows.Forms.Padding(2);
             this.deducciones.Name = "deducciones";
             this.deducciones.Size = new System.Drawing.Size(290, 280);
@@ -668,23 +693,6 @@
             this.txtPorcentaje.Name = "txtPorcentaje";
             this.txtPorcentaje.Size = new System.Drawing.Size(90, 25);
             this.txtPorcentaje.TabIndex = 15;
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
-            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLimpiar.Location = new System.Drawing.Point(530, 111);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(153, 29);
-            this.btnLimpiar.TabIndex = 36;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // Form3
             // 

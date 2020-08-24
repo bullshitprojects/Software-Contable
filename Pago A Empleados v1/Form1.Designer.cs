@@ -84,7 +84,7 @@
             this.txtSalarioBruto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSalarioBruto.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalarioBruto.Location = new System.Drawing.Point(144, 24);
-            this.txtSalarioBruto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSalarioBruto.Margin = new System.Windows.Forms.Padding(2);
             this.txtSalarioBruto.Name = "txtSalarioBruto";
             this.txtSalarioBruto.Size = new System.Drawing.Size(90, 25);
             this.txtSalarioBruto.TabIndex = 2;
@@ -95,7 +95,7 @@
             this.txtBonificaciones.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtBonificaciones.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBonificaciones.Location = new System.Drawing.Point(144, 63);
-            this.txtBonificaciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBonificaciones.Margin = new System.Windows.Forms.Padding(2);
             this.txtBonificaciones.Name = "txtBonificaciones";
             this.txtBonificaciones.Size = new System.Drawing.Size(90, 25);
             this.txtBonificaciones.TabIndex = 3;
@@ -106,7 +106,7 @@
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Location = new System.Drawing.Point(712, 9);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(69, 26);
             this.btnCerrar.TabIndex = 9;
@@ -121,7 +121,7 @@
             this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(790, 43);
             this.panel1.TabIndex = 10;
@@ -159,7 +159,7 @@
             this.btnCalcularSalario.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcularSalario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCalcularSalario.Location = new System.Drawing.Point(94, 154);
-            this.btnCalcularSalario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCalcularSalario.Margin = new System.Windows.Forms.Padding(2);
             this.btnCalcularSalario.Name = "btnCalcularSalario";
             this.btnCalcularSalario.Size = new System.Drawing.Size(80, 29);
             this.btnCalcularSalario.TabIndex = 13;
@@ -175,7 +175,7 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 43);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(790, 439);
             this.panel2.TabIndex = 14;
@@ -192,7 +192,7 @@
             this.resultado.Controls.Add(this.label6);
             this.resultado.Controls.Add(this.txtsalarioNeto);
             this.resultado.Location = new System.Drawing.Point(152, 269);
-            this.resultado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.resultado.Margin = new System.Windows.Forms.Padding(2);
             this.resultado.Name = "resultado";
             this.resultado.Size = new System.Drawing.Size(458, 159);
             this.resultado.TabIndex = 30;
@@ -217,7 +217,7 @@
             "Noviembre",
             "Diciembre"});
             this.cmbMes.Location = new System.Drawing.Point(287, 16);
-            this.cmbMes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbMes.Margin = new System.Windows.Forms.Padding(2);
             this.cmbMes.Name = "cmbMes";
             this.cmbMes.Size = new System.Drawing.Size(144, 27);
             this.cmbMes.TabIndex = 32;
@@ -251,7 +251,7 @@
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(137, 61);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(294, 25);
             this.txtNombre.TabIndex = 28;
@@ -265,7 +265,7 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLimpiar.Location = new System.Drawing.Point(287, 115);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(80, 29);
             this.btnLimpiar.TabIndex = 27;
@@ -282,7 +282,7 @@
             this.btnGenerarBoleta.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerarBoleta.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnGenerarBoleta.Location = new System.Drawing.Point(88, 115);
-            this.btnGenerarBoleta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGenerarBoleta.Margin = new System.Windows.Forms.Padding(2);
             this.btnGenerarBoleta.Name = "btnGenerarBoleta";
             this.btnGenerarBoleta.Size = new System.Drawing.Size(170, 29);
             this.btnGenerarBoleta.TabIndex = 26;
@@ -307,7 +307,7 @@
             this.txtsalarioNeto.Enabled = false;
             this.txtsalarioNeto.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsalarioNeto.Location = new System.Drawing.Point(137, 18);
-            this.txtsalarioNeto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtsalarioNeto.Margin = new System.Windows.Forms.Padding(2);
             this.txtsalarioNeto.Name = "txtsalarioNeto";
             this.txtsalarioNeto.Size = new System.Drawing.Size(95, 25);
             this.txtsalarioNeto.TabIndex = 19;
@@ -324,7 +324,7 @@
             this.deducciones.Controls.Add(this.txtAfp);
             this.deducciones.Controls.Add(this.txtIsss);
             this.deducciones.Location = new System.Drawing.Point(378, 40);
-            this.deducciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deducciones.Margin = new System.Windows.Forms.Padding(2);
             this.deducciones.Name = "deducciones";
             this.deducciones.Size = new System.Drawing.Size(270, 195);
             this.deducciones.TabIndex = 29;
@@ -348,7 +348,7 @@
             this.txtDeducciones.Enabled = false;
             this.txtDeducciones.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDeducciones.Location = new System.Drawing.Point(164, 139);
-            this.txtDeducciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDeducciones.Margin = new System.Windows.Forms.Padding(2);
             this.txtDeducciones.Name = "txtDeducciones";
             this.txtDeducciones.Size = new System.Drawing.Size(90, 25);
             this.txtDeducciones.TabIndex = 22;
@@ -371,7 +371,7 @@
             this.txtRenta.Enabled = false;
             this.txtRenta.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRenta.Location = new System.Drawing.Point(164, 100);
-            this.txtRenta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRenta.Margin = new System.Windows.Forms.Padding(2);
             this.txtRenta.Name = "txtRenta";
             this.txtRenta.Size = new System.Drawing.Size(90, 25);
             this.txtRenta.TabIndex = 18;
@@ -407,7 +407,7 @@
             this.txtAfp.Enabled = false;
             this.txtAfp.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAfp.Location = new System.Drawing.Point(164, 24);
-            this.txtAfp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAfp.Margin = new System.Windows.Forms.Padding(2);
             this.txtAfp.Name = "txtAfp";
             this.txtAfp.Size = new System.Drawing.Size(90, 25);
             this.txtAfp.TabIndex = 14;
@@ -419,7 +419,7 @@
             this.txtIsss.Enabled = false;
             this.txtIsss.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIsss.Location = new System.Drawing.Point(164, 60);
-            this.txtIsss.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIsss.Margin = new System.Windows.Forms.Padding(2);
             this.txtIsss.Name = "txtIsss";
             this.txtIsss.Size = new System.Drawing.Size(90, 25);
             this.txtIsss.TabIndex = 15;
@@ -436,7 +436,7 @@
             this.panel3.Controls.Add(this.txtTotalIngresos);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(73, 40);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(260, 195);
             this.panel3.TabIndex = 28;
@@ -459,7 +459,7 @@
             this.txtTotalIngresos.Enabled = false;
             this.txtTotalIngresos.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalIngresos.Location = new System.Drawing.Point(144, 105);
-            this.txtTotalIngresos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTotalIngresos.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalIngresos.Name = "txtTotalIngresos";
             this.txtTotalIngresos.Size = new System.Drawing.Size(90, 25);
             this.txtTotalIngresos.TabIndex = 24;
@@ -472,7 +472,7 @@
             this.ClientSize = new System.Drawing.Size(790, 482);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
