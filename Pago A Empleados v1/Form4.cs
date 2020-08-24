@@ -18,6 +18,8 @@ namespace ModernGUI_V3
         List<DeduccionMensual> dedAnual = new List<DeduccionMensual>();
         double totalAfp = 0, totalRenta = 0, totalIsss = 0, totalGravado = 0, totalSalario = 0,aguinaldo = 0, aguinaldoGravado = 0, aguinaldoNoGravado = 0;
 
+
+
         public Form4()
         {
             InitializeComponent();
@@ -102,7 +104,7 @@ namespace ModernGUI_V3
                     aguinaldoGravado = aguinaldo - 600;
                     dedMensual.renta = desc.CalcularRentaAguinaldo(dedMensual.salarioBruto , aguinaldoGravado);
                 }
-                else if (i != 12)
+                else if (i != 12 || aguinaldo <= 600)
                 {
                     dedMensual.renta = desc.CalcularRenta(dedMensual.salarioBruto);
                 }
@@ -130,6 +132,7 @@ namespace ModernGUI_V3
                 txtAfp.Text = Convert.ToString(Math.Round(totalAfp,2));
                 txtIsss.Text=Convert.ToString(Math.Round(totalIsss, 2));
                 txtRenta.Text = Convert.ToString(Math.Round(totalRenta, 2));
+                txtAguinaldoNoGravado.Text = Convert.ToString(Math.Round(aguinaldoNoGravado, 2));
                 txtMontoGravado.Text = Convert.ToString(Math.Round(totalGravado + aguinaldoGravado, 2));
                 txtSalario.Text = Convert.ToString(Math.Round(totalSalario, 2));
                 txtAguinaldoGravado.Text = Convert.ToString(Math.Round(aguinaldoGravado, 2));
@@ -138,6 +141,8 @@ namespace ModernGUI_V3
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = dedAnual;
 
+                deducciones.Visible = true;
+                dataGridView1.Visible = true;
             }
            catch (Exception)
             {
