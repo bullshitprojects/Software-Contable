@@ -289,6 +289,7 @@
             this.btnGenerarBoleta.TabIndex = 26;
             this.btnGenerarBoleta.Text = "Generar Boleta";
             this.btnGenerarBoleta.UseVisualStyleBackColor = false;
+            this.btnGenerarBoleta.Click += new System.EventHandler(this.btnGenerarBoleta_Click);
             // 
             // label6
             // 

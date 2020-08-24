@@ -37,6 +37,46 @@ C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Em
 C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.CoreCompileInputs.cache
 C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.exe
 C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.pdb
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.exe.config
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.exe
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.pdb
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csprojAssemblyReference.cache
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form1.resources
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form2.resources
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form3.resources
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.FormPrincipal.resources
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Properties.Resources.resources
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.GenerateResource.cache
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.CoreCompileInputs.cache
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.CopyComplete
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.exe
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.pdb
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\Common.Logging.Core.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\Common.Logging.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.barcodes.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.forms.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.io.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.kernel.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.layout.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.pdfa.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.sign.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.styledxmlparser.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.svg.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\Common.Logging.pdb
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\Common.Logging.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\Common.Logging.Core.pdb
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\Common.Logging.Core.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.barcodes.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.forms.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.io.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.kernel.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.layout.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.pdfa.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.sign.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.styledxmlparser.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.svg.xml
 C:\Users\Hector Amaya\Documents\Ciclo 2 2020\Contabilidad\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.exe.config
 C:\Users\Hector Amaya\Documents\Ciclo 2 2020\Contabilidad\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.exe
 C:\Users\Hector Amaya\Documents\Ciclo 2 2020\Contabilidad\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.pdb
