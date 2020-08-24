@@ -79,6 +79,12 @@ namespace ModernGUI_V3
             resultado.Visible = false;
         }
 
+        private void btnGenerarBoleta_Click(object sender, EventArgs e)
+        {
+            DocumentGenerator doc = new DocumentGenerator();
+            MessageBox.Show("Archivo guardado con éxito en: " + doc.generarBoleta(), "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             try
