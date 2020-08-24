@@ -97,5 +97,10 @@ namespace ModernGUI_V3
             txtTotalRetencion.Text = "";
             deducciones.Visible = false;
         }
+
+        private void txt1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

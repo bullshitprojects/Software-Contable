@@ -88,6 +88,7 @@
             this.txtSalarioBruto.Name = "txtSalarioBruto";
             this.txtSalarioBruto.Size = new System.Drawing.Size(90, 25);
             this.txtSalarioBruto.TabIndex = 2;
+            this.txtSalarioBruto.TextChanged += new System.EventHandler(this.txtSalarioBruto_TextChanged);
             this.txtSalarioBruto.Leave += new System.EventHandler(this.txtSalarioBruto_Leave);
             // 
             // txtBonificaciones

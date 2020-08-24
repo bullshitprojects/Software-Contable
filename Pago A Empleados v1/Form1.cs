@@ -84,6 +84,10 @@ namespace ModernGUI_V3
             DocumentGenerator doc = new DocumentGenerator();
             MessageBox.Show("Archivo guardado con éxito en: " + doc.generarBoleta(), "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        private void txtSalarioBruto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
