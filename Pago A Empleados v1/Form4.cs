@@ -105,7 +105,9 @@ namespace ModernGUI_V3
                 else if (i != 12 || aguinaldo <= 600)
                 {
                     dedMensual.renta = desc.CalcularRenta(dedMensual.salarioBruto);
-                }
+                    aguinaldoNoGravado = aguinaldo;
+                    aguinaldoGravado = 0;
+                    }
                 else
                 {
                     aguinaldoNoGravado = aguinaldo;
