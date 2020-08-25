@@ -13,7 +13,7 @@ namespace ModernGUI_V3
     public partial class Form1 : Form
     {
         Deducciones desc = new Deducciones();
-        double afp, renta, isss, salarioneto, totaldeduciones;
+        double afp, renta, isss, salarioneto, totaldeduciones, boni;
 
         public Form1()
         {
@@ -82,7 +82,25 @@ namespace ModernGUI_V3
         private void btnGenerarBoleta_Click(object sender, EventArgs e)
         {
             DocumentGenerator doc = new DocumentGenerator();
-            MessageBox.Show("Archivo guardado con éxito en: " + doc.generarBoleta(), "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                if (validar())
+                {
+                    doc.generarBoleta(txtCargo.Text, cmbMes.Text, txtNombre.Text, Convert.ToDouble(txtSalarioBruto.Text), Math.Round(afp, 2), Math.Round(isss, 2), Math.Round(renta, 2), totaldeduciones, Math.Round(salarioneto, 2), desc.Observacion, boni);
+                    MessageBox.Show("Archivo guardado con éxito en: " + doc.path, "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("¡Recuerda que debes llenar todos los campos para generar la boleta!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+               
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Algo salió mal al intentar guardar el archivo.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
+            
         }
         private void txtSalarioBruto_TextChanged(object sender, EventArgs e)
         {
@@ -149,6 +167,13 @@ namespace ModernGUI_V3
             catch (Exception)
             {
             }
+        }
+
+        private bool validar()
+        {
+            if (txtBonificaciones.Text == "")
+                boni = 0;
+            return cmbMes.SelectedIndex >= 0 && txtNombre.TextLength > 0 && txtCargo.TextLength > 0;       
         }
     }
 }

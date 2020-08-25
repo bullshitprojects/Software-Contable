@@ -22,6 +22,7 @@ namespace ModernGUI_V3
         static iText.Kernel.Colors.Color subNavy = new DeviceRgb(209, 224, 235);
         static iText.Kernel.Colors.Color navy = new DeviceRgb(44, 59, 84);
         static iText.Kernel.Colors.Color light = new DeviceRgb(237, 237, 237);
+        public String path;
         //Creando un diccionario de estilos
         Dictionary<int, Style> estilos = new Dictionary<int, Style>
         { 
@@ -61,19 +62,20 @@ namespace ModernGUI_V3
 
         };
 
-        public String generarBoleta()
+        public void generarBoleta(String cargo, String mes, String emp, double salario, double afp, double isss, double renta, double tdedudc, double salarioN, String tramo, double boni = 0)
         {
-            //String cargo, String mes, String emp, double salario, double boni, double afp, double isss, double renta, double tdedudc, double salarioN
+
             var exportFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var exportFile = System.IO.Path.Combine(exportFolder, "Boleta de pago - " + "gg" + ".pdf");
-            //incluir fecha en el reporte
-            using (var writer = new PdfWriter(exportFile))
+            path = System.IO.Path.Combine(exportFolder, "Boleta de pago - " + emp + " - " + mes + ".pdf");
+            
+            using (var writer = new PdfWriter(path))
             {
                 using (var pdf = new PdfDocument(writer))
                 {
                     var doc = new Document(pdf, PageSize.A4.Rotate());
                     doc.SetMargins(35, 35, 35, 35);
-
+                    double subtotal = salario + boni;
+                    double subtotal2 = isss + afp + renta;
                     Table tabla = new Table(new float[7]).UseAllAvailableWidth();
                     Cell head = new Cell(1, 3).Add(new Paragraph("Boleta de pago").AddStyle(estilos[1])).AddStyle(estilos[10]);
                     tabla.AddCell(head);
@@ -85,43 +87,53 @@ namespace ModernGUI_V3
                     tabla.AddCell(head);
                     Cell contenido = new Cell(1, 1).Add(new Paragraph("Mes:").AddStyle(estilos[4])).AddStyle(estilos[3]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 2).Add(new Paragraph("Enero").AddStyle(estilos[2])).AddStyle(estilos[5]);
+                    contenido = new Cell(1, 2).Add(new Paragraph(mes).AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
                     head = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[1])).AddStyle(estilos[10]);
                     tabla.AddCell(head);
                     contenido = new Cell(1, 1).Add(new Paragraph("Mes:").AddStyle(estilos[4])).AddStyle(estilos[3]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 2).Add(new Paragraph("Febrero").AddStyle(estilos[2])).AddStyle(estilos[5]);
+                    contenido = new Cell(1, 2).Add(new Paragraph(mes).AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Empleado:").AddStyle(estilos[4])).AddStyle(estilos[3]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 2).Add(new Paragraph("Nombre").AddStyle(estilos[2])).AddStyle(estilos[5]);
+                    contenido = new Cell(1, 2).Add(new Paragraph(emp).AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
                     head = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[1])).AddStyle(estilos[10]);
                     tabla.AddCell(head);
                     contenido = new Cell(1, 1).Add(new Paragraph("Empleado:").AddStyle(estilos[4])).AddStyle(estilos[3]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 2).Add(new Paragraph("Nombre").AddStyle(estilos[2])).AddStyle(estilos[5]);
+                    contenido = new Cell(1, 2).Add(new Paragraph(emp).AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Cargo:").AddStyle(estilos[4])).AddStyle(estilos[3]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 2).Add(new Paragraph("Nombre C").AddStyle(estilos[2])).AddStyle(estilos[5]);
+                    contenido = new Cell(1, 2).Add(new Paragraph(cargo).AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
                     head = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[1])).AddStyle(estilos[10]);
                     tabla.AddCell(head);
                     contenido = new Cell(1, 1).Add(new Paragraph("Cargo:").AddStyle(estilos[4])).AddStyle(estilos[3]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 2).Add(new Paragraph("NombreC").AddStyle(estilos[2])).AddStyle(estilos[5]);
+                    contenido = new Cell(1, 2).Add(new Paragraph(cargo).AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("Salario Mensual:").AddStyle(estilos[2])).AddStyle(estilos[7]);
+                    contenido = new Cell(1, 2).Add(new Paragraph("Salario Mensual:").AddStyle(estilos[2])).AddStyle(estilos[7]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 2).Add(new Paragraph("$" + "333").AddStyle(estilos[2])).AddStyle(estilos[6]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + salario).AddStyle(estilos[2])).AddStyle(estilos[6]);
                     tabla.AddCell(contenido);
                     head = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[1])).AddStyle(estilos[10]);
                     tabla.AddCell(head);
-                    contenido = new Cell(1, 1).Add(new Paragraph("Salario Mensual:").AddStyle(estilos[2])).AddStyle(estilos[7]);
+                    contenido = new Cell(1, 2).Add(new Paragraph("Salario Mensual:").AddStyle(estilos[2])).AddStyle(estilos[7]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 2).Add(new Paragraph("$" + "333").AddStyle(estilos[2])).AddStyle(estilos[6]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + salario).AddStyle(estilos[2])).AddStyle(estilos[6]);
+                    tabla.AddCell(contenido);
+                    contenido = new Cell(1, 1).Add(new Paragraph("Bonificación:").AddStyle(estilos[2])).AddStyle(estilos[7]);
+                    tabla.AddCell(contenido);
+                    contenido = new Cell(1, 2).Add(new Paragraph("$ " + boni).AddStyle(estilos[2])).AddStyle(estilos[6]);
+                    tabla.AddCell(contenido);
+                    head = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[1])).AddStyle(estilos[10]);
+                    tabla.AddCell(head);
+                    contenido = new Cell(1, 1).Add(new Paragraph("Bonificación:").AddStyle(estilos[2])).AddStyle(estilos[7]);
+                    tabla.AddCell(contenido);
+                    contenido = new Cell(1, 2).Add(new Paragraph("$ " + boni).AddStyle(estilos[2])).AddStyle(estilos[6]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 3).Add(new Paragraph("\n").AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
@@ -133,7 +145,7 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Sub Total").AddStyle(estilos[2])).AddStyle(estilos[11]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("dinero$").AddStyle(estilos[2])).AddStyle(estilos[12]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + subtotal).AddStyle(estilos[2])).AddStyle(estilos[12]);
                     tabla.AddCell(contenido);
                     head = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[1])).AddStyle(estilos[10]);
                     tabla.AddCell(head);
@@ -141,7 +153,7 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Sub Total").AddStyle(estilos[2])).AddStyle(estilos[11]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("dinero$").AddStyle(estilos[2])).AddStyle(estilos[12]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + subtotal).AddStyle(estilos[2])).AddStyle(estilos[12]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 3).Add(new Paragraph("Deducciones (-)").AddStyle(estilos[2])).AddStyle(estilos[7]);
                     tabla.AddCell(contenido);
@@ -153,7 +165,7 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("AFP").AddStyle(estilos[2])).AddStyle(estilos[13]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("Dinero$").AddStyle(estilos[2])).AddStyle(estilos[5]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + afp).AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[2])).AddStyle(estilos[10]);
                     tabla.AddCell(contenido);
@@ -161,13 +173,13 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("AFP").AddStyle(estilos[2])).AddStyle(estilos[13]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("Dinero$").AddStyle(estilos[2])).AddStyle(estilos[5]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + afp).AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[2])).AddStyle(estilos[13]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("ISSS").AddStyle(estilos[2])).AddStyle(estilos[13]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("Dinero$").AddStyle(estilos[2])).AddStyle(estilos[5]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + isss).AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[2])).AddStyle(estilos[10]);
                     tabla.AddCell(contenido);
@@ -175,13 +187,13 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("ISSS").AddStyle(estilos[2])).AddStyle(estilos[13]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("Dinero$").AddStyle(estilos[2])).AddStyle(estilos[5]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + isss).AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[2])).AddStyle(estilos[13]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Renta").AddStyle(estilos[2])).AddStyle(estilos[13]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("Dinero$").AddStyle(estilos[2])).AddStyle(estilos[5]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + renta).AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[2])).AddStyle(estilos[10]);
                     tabla.AddCell(contenido);
@@ -189,27 +201,13 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Renta").AddStyle(estilos[2])).AddStyle(estilos[13]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("Dinero$").AddStyle(estilos[2])).AddStyle(estilos[5]);
-                    tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[2])).AddStyle(estilos[13]);
-                    tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("Minutos tarde").AddStyle(estilos[2])).AddStyle(estilos[13]);
-                    tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("Dinero$").AddStyle(estilos[2])).AddStyle(estilos[5]);
-                    tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[2])).AddStyle(estilos[10]);
-                    tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[2])).AddStyle(estilos[13]);
-                    tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("Minutos tarde").AddStyle(estilos[2])).AddStyle(estilos[13]);
-                    tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("Dinero$").AddStyle(estilos[2])).AddStyle(estilos[5]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + renta).AddStyle(estilos[2])).AddStyle(estilos[5]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[2])).AddStyle(estilos[11]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Sub Total").AddStyle(estilos[2])).AddStyle(estilos[11]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("dinero$").AddStyle(estilos[2])).AddStyle(estilos[12]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + subtotal2).AddStyle(estilos[2])).AddStyle(estilos[12]);
                     tabla.AddCell(contenido);
                     head = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[1])).AddStyle(estilos[10]);
                     tabla.AddCell(head);
@@ -217,7 +215,7 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Sub Total").AddStyle(estilos[2])).AddStyle(estilos[11]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("dinero$").AddStyle(estilos[2])).AddStyle(estilos[12]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + subtotal2).AddStyle(estilos[2])).AddStyle(estilos[12]);
                     tabla.AddCell(contenido);
                     head = new Cell(1, 7).Add(new Paragraph("\n").AddStyle(estilos[2])).AddStyle(estilos[10]);
                     tabla.AddCell(head);
@@ -225,7 +223,7 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Total a Pagar").AddStyle(estilos[4])).AddStyle(estilos[14]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("money$$").AddStyle(estilos[4])).AddStyle(estilos[3]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + salarioN).AddStyle(estilos[4])).AddStyle(estilos[3]);
                     tabla.AddCell(contenido);
                     head = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[1])).AddStyle(estilos[10]);
                     tabla.AddCell(head);
@@ -233,17 +231,17 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Total a Pagar").AddStyle(estilos[4])).AddStyle(estilos[14]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("money$$").AddStyle(estilos[4])).AddStyle(estilos[3]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + salarioN).AddStyle(estilos[4])).AddStyle(estilos[3]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Observaciones:").AddStyle(estilos[2])).AddStyle(estilos[16]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 2).Add(new Paragraph("Aplica el tramoxdxdxd").AddStyle(estilos[2])).AddStyle(estilos[7]);
+                    contenido = new Cell(1, 2).Add(new Paragraph(tramo).AddStyle(estilos[2])).AddStyle(estilos[7]);
                     tabla.AddCell(contenido);
                     head = new Cell(1, 1).Add(new Paragraph(" ").AddStyle(estilos[1])).AddStyle(estilos[10]);
                     tabla.AddCell(head);
                     contenido = new Cell(1, 1).Add(new Paragraph("Observaciones:").AddStyle(estilos[2])).AddStyle(estilos[16]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 2).Add(new Paragraph("Aplica el tramoxdxdxd").AddStyle(estilos[2])).AddStyle(estilos[7]);
+                    contenido = new Cell(1, 2).Add(new Paragraph(tramo).AddStyle(estilos[2])).AddStyle(estilos[7]);
                     tabla.AddCell(contenido);
                     head = new Cell(1, 7).Add(new Paragraph("\n").AddStyle(estilos[2])).AddStyle(estilos[10]);
                     tabla.AddCell(head);
@@ -291,12 +289,11 @@ namespace ModernGUI_V3
                     doc.Close();
                 }
             }
-            return exportFile.ToString();//Texto que contiene la ruta en donde se ha guardado el archivo
         }
 
-        public String generarConstancia()
+        public void generarConstancia(String emp, String nit, double aguinaldo, double montograbado, double totalSalario, double afp, double isss, double aguinaldonograbado)
         {
-            return "";
+            
         }
     }
 }

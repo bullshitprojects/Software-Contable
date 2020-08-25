@@ -18,8 +18,6 @@ namespace ModernGUI_V3
         List<DeduccionMensual> dedAnual = new List<DeduccionMensual>();
         double totalAfp = 0, totalRenta = 0, totalIsss = 0, totalGravado = 0, totalSalario = 0,aguinaldo = 0, aguinaldoGravado = 0, aguinaldoNoGravado = 0;
 
-
-
         public Form4()
         {
             InitializeComponent();
