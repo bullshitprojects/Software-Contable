@@ -117,3 +117,4 @@ C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.sty
 C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.svg.xml
 C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.CopyComplete
 C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form4.resources
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form4.resources
