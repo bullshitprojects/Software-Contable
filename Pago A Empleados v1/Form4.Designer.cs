@@ -244,6 +244,7 @@
             this.button2.TabIndex = 37;
             this.button2.Text = "Generar Constancia";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label22
             // 
@@ -255,7 +256,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(194, 20);
             this.label22.TabIndex = 30;
-            this.label22.Text = "- Aguinaldo No Grabado:";
+            this.label22.Text = "- Aguinaldo No Gravado:";
             // 
             // txtAguinaldoNoGravado
             // 
@@ -290,7 +291,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(173, 20);
             this.label20.TabIndex = 27;
-            this.label20.Text = "+ Aguinaldo Grabado:";
+            this.label20.Text = "+ Aguinaldo Gravado:";
             // 
             // txtAguinaldoGravado
             // 

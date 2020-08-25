@@ -18,6 +18,12 @@ namespace ModernGUI_V3
         List<DeduccionMensual> dedAnual = new List<DeduccionMensual>();
         double totalAfp = 0, totalRenta = 0, totalIsss = 0, totalGravado = 0, totalSalario = 0,aguinaldo = 0, aguinaldoGravado = 0, aguinaldoNoGravado = 0;
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DocumentGenerator doc = new DocumentGenerator();
+            doc.generarConstancia(txtNombre.Text, txtNit.Text, aguinaldo, Convert.ToDouble(txtMontoGravado.Text), aguinaldo + Convert.ToDouble(txtMontoGravado.Text), totalAfp, totalIsss, aguinaldoGravado, Math.Round(totalSalario, 2));
+        }
+
         public Form4()
         {
             InitializeComponent();
