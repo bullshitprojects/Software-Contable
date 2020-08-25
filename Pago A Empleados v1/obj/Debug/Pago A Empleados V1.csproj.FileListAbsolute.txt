@@ -24,19 +24,9 @@ C:\Users\cesar\Desktop\Ciclo II 2020\Conta\Tarea Contabilidad\Pago A Empleados v
 C:\Users\cesar\Desktop\Ciclo II 2020\Conta\Tarea Contabilidad\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.CoreCompileInputs.cache
 C:\Users\cesar\Desktop\Ciclo II 2020\Conta\Tarea Contabilidad\Pago A Empleados v1\obj\Debug\ModernGUI_V3.exe
 C:\Users\cesar\Desktop\Ciclo II 2020\Conta\Tarea Contabilidad\Pago A Empleados v1\obj\Debug\ModernGUI_V3.pdb
-C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.exe.config
-C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.exe
-C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.pdb
 C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csprojAssemblyReference.cache
-C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form1.resources
-C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form2.resources
-C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form3.resources
-C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.FormPrincipal.resources
-C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Properties.Resources.resources
 C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.GenerateResource.cache
 C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.CoreCompileInputs.cache
-C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.exe
-C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.pdb
 C:\Users\Hector Amaya\Documents\Ciclo 2 2020\Contabilidad\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.exe.config
 C:\Users\Hector Amaya\Documents\Ciclo 2 2020\Contabilidad\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.exe
 C:\Users\Hector Amaya\Documents\Ciclo 2 2020\Contabilidad\Software-Contable\Pago A Empleados v1\bin\Debug\ModernGUI_V3.pdb
@@ -76,7 +66,6 @@ C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.sig
 C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.styledxmlparser.xml
 C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\itext.svg.xml
 C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.CopyComplete
-C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\ModernGUI_V3.Form4.resources
 C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\Sistema de Pago a Empleados.exe.config
 C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\Sistema de Pago a Empleados.exe
 C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\Sistema de Pago a Empleados.pdb
@@ -118,3 +107,14 @@ C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\
 C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csproj.CopyComplete
 C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\Sistema de Pago a Empleados.exe
 C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\Sistema de Pago a Empleados.pdb
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\Sistema de Pago a Empleados.exe.config
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\Sistema de Pago a Empleados.exe
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\bin\Debug\Sistema de Pago a Empleados.pdb
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\SistemaDePagoEmpleados.Form1.resources
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\SistemaDePagoEmpleados.Form2.resources
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\SistemaDePagoEmpleados.Form3.resources
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\SistemaDePagoEmpleados.Form4.resources
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\SistemaDePagoEmpleados.FormPrincipal.resources
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\SistemaDePagoEmpleados.Properties.Resources.resources
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Sistema de Pago a Empleados.exe
+C:\Users\cesar\Desktop\Software-Contable\Pago A Empleados v1\obj\Debug\Sistema de Pago a Empleados.pdb

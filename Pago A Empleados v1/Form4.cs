@@ -16,7 +16,7 @@ namespace SistemaDePagoEmpleados
         Deducciones desc = new Deducciones();
         DeduccionMensual dedMensual = new DeduccionMensual();
         List<DeduccionMensual> dedAnual = new List<DeduccionMensual>();
-        double totalAfp = 0, totalRenta = 0, totalIsss = 0, totalGravado = 0, totalSalario = 0,aguinaldo = 0, aguinaldoGravado = 0, aguinaldoNoGravado = 0, totalSalarioGravado =0;
+        double totalAfp = 0, totalRenta = 0, totalIsss = 0, totalGravado = 0, totalSalario = 0, aguinaldo = 0, aguinaldoGravado = 0, aguinaldoNoGravado = 0, totalSalarioGravado = 0;
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
@@ -44,24 +44,23 @@ namespace SistemaDePagoEmpleados
             txtAguinaldoNoGravado.Text = "";
             txtMontoGravado.Text = "";
             txtRenta.Text = "";
+            txtNombre.Text = "";
+            txtNit.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DocumentGenerator doc = new DocumentGenerator();
-            doc.generarConstancia(txtNombre.Text, txtNit.Text,totalSalario,aguinaldo,totalSalarioGravado, totalAfp, totalIsss, aguinaldoNoGravado, totalGravado, totalRenta);
-
-            //Variables a utilizar 
-            //Ingresos gravados / devengado = totalSalario
-            //Aguinaldo = aguinaldo
-            //total Ingresos Gravados =totalSalarioGravado
-            //Cotizacion AFP = totalAfp
-            //Cotizacion ISSS = totalIsss
-            //Aguinaldo no gravado = aguinaldoNoGravado
-            //Monto Gravado = totalGravado
-            //Impuesto sobre la renta = totalRenta
-            MessageBox.Show("Archivo guardado con éxito en: " + doc.path, "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            System.Diagnostics.Process.Start(doc.path);
+            try
+            {
+                DocumentGenerator doc = new DocumentGenerator();
+                doc.generarConstancia(txtNombre.Text, txtNit.Text, totalSalario, aguinaldo, totalSalarioGravado, totalAfp, totalIsss, aguinaldoNoGravado, totalGravado, totalRenta);
+                MessageBox.Show("Archivo guardado con éxito en: " + doc.path, "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(doc.path);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error... Revisar Los Datos");
+            }
         }
 
         public Form4()
@@ -78,8 +77,8 @@ namespace SistemaDePagoEmpleados
         {
             try
             {
-            dedAnual = new List<DeduccionMensual>();
-            for (int i = 1; i < 13; i++)
+                dedAnual = new List<DeduccionMensual>();
+                for (int i = 1; i < 13; i++)
                 {
                     desc = new Deducciones();
                     dedMensual = new DeduccionMensual();
@@ -137,29 +136,29 @@ namespace SistemaDePagoEmpleados
 
                             break;
                     }
-                dedMensual.afp = desc.CalcularAFP(dedMensual.salarioBruto);
-                dedMensual.isss = desc.CalcularISSS(dedMensual.salarioBruto);
+                    dedMensual.afp = desc.CalcularAFP(dedMensual.salarioBruto);
+                    dedMensual.isss = desc.CalcularISSS(dedMensual.salarioBruto);
 
-                aguinaldo = Convert.ToDouble(txt13.Text);
+                    aguinaldo = Convert.ToDouble(txt13.Text);
 
-                if (i==12 & aguinaldo > 600)
-                {
-                    aguinaldoNoGravado = 600;
-                    aguinaldoGravado = aguinaldo - 600;
-                    dedMensual.renta = desc.CalcularRentaAguinaldo(dedMensual.salarioBruto , aguinaldoGravado);
-                }
-                else if (i != 12 || aguinaldo <= 600)
-                {
-                    dedMensual.renta = desc.CalcularRenta(dedMensual.salarioBruto);
-                    aguinaldoNoGravado = aguinaldo;
-                    aguinaldoGravado = 0;
+                    if (i == 12 & aguinaldo > 600)
+                    {
+                        aguinaldoNoGravado = 600;
+                        aguinaldoGravado = aguinaldo - 600;
+                        dedMensual.renta = desc.CalcularRentaAguinaldo(dedMensual.salarioBruto, aguinaldoGravado);
                     }
-                else
-                {
-                    aguinaldoNoGravado = aguinaldo;
-                    aguinaldoGravado = 0;
-                }
-             
+                    else if (i != 12 || aguinaldo <= 600)
+                    {
+                        dedMensual.renta = desc.CalcularRenta(dedMensual.salarioBruto);
+                        aguinaldoNoGravado = aguinaldo;
+                        aguinaldoGravado = 0;
+                    }
+                    else
+                    {
+                        aguinaldoNoGravado = aguinaldo;
+                        aguinaldoGravado = 0;
+                    }
+
                     dedMensual.salarioGravado = Convert.ToDouble(dedMensual.salarioBruto) - (dedMensual.afp + dedMensual.isss);
                     dedMensual.salario = Convert.ToDouble(dedMensual.salarioGravado - dedMensual.renta);
                     dedAnual.Add(dedMensual);
@@ -178,16 +177,16 @@ namespace SistemaDePagoEmpleados
 
                 txtSalario.Text = Convert.ToString(Math.Round(totalSalario, 2));
                 txtAguinaldo.Text = Convert.ToString(Math.Round(aguinaldo, 2));
-                txtIngresoGravado.Text= Convert.ToString(Math.Round(totalSalario + aguinaldo, 2));
+                txtIngresoGravado.Text = Convert.ToString(Math.Round(totalSalario + aguinaldo, 2));
 
-                txtAfp.Text = Convert.ToString(Math.Round(totalAfp,2));
-                txtIsss.Text=Convert.ToString(Math.Round(totalIsss, 2));
+                txtAfp.Text = Convert.ToString(Math.Round(totalAfp, 2));
+                txtIsss.Text = Convert.ToString(Math.Round(totalIsss, 2));
                 txtAguinaldoNoGravado.Text = Convert.ToString(Math.Round(aguinaldoNoGravado, 2));
 
                 txtMontoGravado.Text = Convert.ToString(Math.Round(totalGravado + aguinaldoGravado, 2));
 
                 txtRenta.Text = Convert.ToString(Math.Round(totalRenta, 2));
-                
+
 
                 //llenado de tablas
                 dataGridView1.DataSource = null;
@@ -197,7 +196,7 @@ namespace SistemaDePagoEmpleados
                 dataGridView1.Visible = true;
                 btnGenerarConstancia.Visible = true;
             }
-           catch (Exception)
+            catch (Exception)
             {
                 MessageBox.Show("Error... Revisar Los Datos");
             }
