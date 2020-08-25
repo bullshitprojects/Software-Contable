@@ -48,7 +48,7 @@ namespace SistemaDePagoEmpleados
         {
             try
             {
-                if (txtBonificaciones.Text=="")
+                if (txtBonificaciones.Text == "")
                 {
                     txtTotalIngresos.Text = txtSalarioBruto.Text;
                 }
@@ -81,9 +81,10 @@ namespace SistemaDePagoEmpleados
 
         private void btnGenerarBoleta_Click(object sender, EventArgs e)
         {
-            DocumentGenerator doc = new DocumentGenerator();
+
             try
             {
+                DocumentGenerator doc = new DocumentGenerator();
                 if (validar())
                 {
                     doc.generarBoleta(txtCargo.Text, cmbMes.Text, txtNombre.Text, Convert.ToDouble(txtSalarioBruto.Text), Math.Round(afp, 2), Math.Round(isss, 2), Math.Round(renta, 2), totaldeduciones, Math.Round(salarioneto, 2), desc.Observacion, boni);
@@ -94,14 +95,14 @@ namespace SistemaDePagoEmpleados
                 {
                     MessageBox.Show("¡Recuerda que debes llenar todos los campos para generar la boleta!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-               
+
             }
             catch (Exception)
             {
                 MessageBox.Show("Algo salió mal al intentar guardar el archivo.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            
-            
+
+
         }
         private void txtSalarioBruto_TextChanged(object sender, EventArgs e)
         {
@@ -117,19 +118,19 @@ namespace SistemaDePagoEmpleados
         {
             try
             {
-            afp = desc.CalcularAFP(Convert.ToDouble(txtTotalIngresos.Text));
-            isss = desc.CalcularISSS(Convert.ToDouble(txtTotalIngresos.Text));
-            renta = desc.CalcularRenta(Convert.ToDouble(txtTotalIngresos.Text));
-            totaldeduciones = afp + isss + renta;
-            salarioneto = Convert.ToDouble(txtTotalIngresos.Text) - totaldeduciones;
+                afp = desc.CalcularAFP(Convert.ToDouble(txtTotalIngresos.Text));
+                isss = desc.CalcularISSS(Convert.ToDouble(txtTotalIngresos.Text));
+                renta = desc.CalcularRenta(Convert.ToDouble(txtTotalIngresos.Text));
+                totaldeduciones = afp + isss + renta;
+                salarioneto = Convert.ToDouble(txtTotalIngresos.Text) - totaldeduciones;
 
-            txtAfp.Text = "$ " + Convert.ToString(Math.Round(afp, 2));
-            txtIsss.Text = "$ " + Convert.ToString(Math.Round(isss, 2));
-            txtRenta.Text = "$ " + Convert.ToString(Math.Round(renta, 2));
-            txtsalarioNeto.Text = "$ " + Convert.ToString(Math.Round(salarioneto, 2));
+                txtAfp.Text = "$ " + Convert.ToString(Math.Round(afp, 2));
+                txtIsss.Text = "$ " + Convert.ToString(Math.Round(isss, 2));
+                txtRenta.Text = "$ " + Convert.ToString(Math.Round(renta, 2));
+                txtsalarioNeto.Text = "$ " + Convert.ToString(Math.Round(salarioneto, 2));
 
-            deducciones.Visible = true;
-            resultado.Visible = true;
+                deducciones.Visible = true;
+                resultado.Visible = true;
             }
             catch (Exception)
             {
@@ -179,7 +180,7 @@ namespace SistemaDePagoEmpleados
         {
             if (txtBonificaciones.Text == "")
                 boni = 0;
-            return cmbMes.SelectedIndex >= 0 && txtNombre.TextLength > 0 && txtCargo.TextLength > 0;       
+            return cmbMes.SelectedIndex >= 0 && txtNombre.TextLength > 0 && txtCargo.TextLength > 0;
         }
     }
 }

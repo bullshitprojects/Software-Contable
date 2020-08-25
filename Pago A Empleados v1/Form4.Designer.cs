@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
@@ -36,7 +36,11 @@
             this.label24 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.deducciones = new System.Windows.Forms.Panel();
-            this.btnGenerarConstancia = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.txtIngresoGravado = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtAguinaldo = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.txtAguinaldoNoGravado = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -51,7 +55,7 @@
             this.txtIsss = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnGenerarConstancia = new System.Windows.Forms.Button();
             this.txt13 = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -83,10 +87,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtAguinaldo = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtIngresoGravado = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.deducciones.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -112,8 +112,8 @@
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.SystemColors.Window;
             this.panel4.Controls.Add(this.label23);
@@ -196,37 +196,82 @@
             this.deducciones.Controls.Add(this.label18);
             this.deducciones.Controls.Add(this.txtAfp);
             this.deducciones.Controls.Add(this.txtIsss);
-            this.deducciones.Location = new System.Drawing.Point(624, 188);
+            this.deducciones.Location = new System.Drawing.Point(627, 188);
             this.deducciones.Margin = new System.Windows.Forms.Padding(2);
             this.deducciones.Name = "deducciones";
-            this.deducciones.Size = new System.Drawing.Size(285, 307);
+            this.deducciones.Size = new System.Drawing.Size(279, 307);
             this.deducciones.TabIndex = 40;
             this.deducciones.Visible = false;
             // 
-            // btnGenerarConstancia
+            // label21
             // 
-            this.btnGenerarConstancia.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnGenerarConstancia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
-            this.btnGenerarConstancia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGenerarConstancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerarConstancia.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerarConstancia.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnGenerarConstancia.Location = new System.Drawing.Point(24, 90);
-            this.btnGenerarConstancia.Margin = new System.Windows.Forms.Padding(2);
-            this.btnGenerarConstancia.Name = "btnGenerarConstancia";
-            this.btnGenerarConstancia.Size = new System.Drawing.Size(192, 29);
-            this.btnGenerarConstancia.TabIndex = 37;
-            this.btnGenerarConstancia.Text = "Generar Constancia";
-            this.btnGenerarConstancia.UseVisualStyleBackColor = false;
-            this.btnGenerarConstancia.Visible = false;
-            this.btnGenerarConstancia.Click += new System.EventHandler(this.button2_Click);
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(12, 65);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(190, 18);
+            this.label21.TabIndex = 41;
+            this.label21.Text = "Total, Ingresos Gravados:";
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnLimpiar.Location = new System.Drawing.Point(45, 269);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(192, 29);
+            this.btnLimpiar.TabIndex = 36;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // txtIngresoGravado
+            // 
+            this.txtIngresoGravado.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtIngresoGravado.Enabled = false;
+            this.txtIngresoGravado.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngresoGravado.Location = new System.Drawing.Point(203, 62);
+            this.txtIngresoGravado.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIngresoGravado.Name = "txtIngresoGravado";
+            this.txtIngresoGravado.Size = new System.Drawing.Size(68, 25);
+            this.txtIngresoGravado.TabIndex = 40;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(3, 7);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(156, 20);
+            this.label13.TabIndex = 39;
+            this.label13.Text = "Ingresos Gravados :";
+            // 
+            // txtAguinaldo
+            // 
+            this.txtAguinaldo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtAguinaldo.Enabled = false;
+            this.txtAguinaldo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAguinaldo.Location = new System.Drawing.Point(203, 33);
+            this.txtAguinaldo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAguinaldo.Name = "txtAguinaldo";
+            this.txtAguinaldo.Size = new System.Drawing.Size(68, 25);
+            this.txtAguinaldo.TabIndex = 38;
             // 
             // label22
             // 
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(8, 163);
+            this.label22.Location = new System.Drawing.Point(5, 163);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(194, 20);
@@ -238,7 +283,7 @@
             this.txtAguinaldoNoGravado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtAguinaldoNoGravado.Enabled = false;
             this.txtAguinaldoNoGravado.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAguinaldoNoGravado.Location = new System.Drawing.Point(206, 160);
+            this.txtAguinaldoNoGravado.Location = new System.Drawing.Point(203, 160);
             this.txtAguinaldoNoGravado.Margin = new System.Windows.Forms.Padding(2);
             this.txtAguinaldoNoGravado.Name = "txtAguinaldoNoGravado";
             this.txtAguinaldoNoGravado.Size = new System.Drawing.Size(68, 25);
@@ -249,7 +294,7 @@
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(95, 236);
+            this.label15.Location = new System.Drawing.Point(92, 236);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(105, 18);
@@ -261,7 +306,7 @@
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(6, 36);
+            this.label19.Location = new System.Drawing.Point(3, 36);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(88, 20);
@@ -273,7 +318,7 @@
             this.txtSalario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSalario.Enabled = false;
             this.txtSalario.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalario.Location = new System.Drawing.Point(206, 4);
+            this.txtSalario.Location = new System.Drawing.Point(203, 4);
             this.txtSalario.Margin = new System.Windows.Forms.Padding(2);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(68, 25);
@@ -284,7 +329,7 @@
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(73, 192);
+            this.label14.Location = new System.Drawing.Point(70, 192);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(129, 18);
@@ -296,7 +341,7 @@
             this.txtMontoGravado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtMontoGravado.Enabled = false;
             this.txtMontoGravado.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMontoGravado.Location = new System.Drawing.Point(205, 189);
+            this.txtMontoGravado.Location = new System.Drawing.Point(202, 189);
             this.txtMontoGravado.Margin = new System.Windows.Forms.Padding(2);
             this.txtMontoGravado.Name = "txtMontoGravado";
             this.txtMontoGravado.Size = new System.Drawing.Size(68, 25);
@@ -307,7 +352,7 @@
             this.txtRenta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtRenta.Enabled = false;
             this.txtRenta.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRenta.Location = new System.Drawing.Point(205, 233);
+            this.txtRenta.Location = new System.Drawing.Point(202, 233);
             this.txtRenta.Margin = new System.Windows.Forms.Padding(2);
             this.txtRenta.Name = "txtRenta";
             this.txtRenta.Size = new System.Drawing.Size(68, 25);
@@ -318,7 +363,7 @@
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(8, 136);
+            this.label16.Location = new System.Drawing.Point(5, 136);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(130, 20);
@@ -330,7 +375,7 @@
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(7, 107);
+            this.label18.Location = new System.Drawing.Point(4, 107);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(131, 20);
@@ -342,7 +387,7 @@
             this.txtAfp.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtAfp.Enabled = false;
             this.txtAfp.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAfp.Location = new System.Drawing.Point(205, 102);
+            this.txtAfp.Location = new System.Drawing.Point(202, 102);
             this.txtAfp.Margin = new System.Windows.Forms.Padding(2);
             this.txtAfp.Name = "txtAfp";
             this.txtAfp.Size = new System.Drawing.Size(68, 25);
@@ -353,7 +398,7 @@
             this.txtIsss.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtIsss.Enabled = false;
             this.txtIsss.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIsss.Location = new System.Drawing.Point(205, 131);
+            this.txtIsss.Location = new System.Drawing.Point(202, 131);
             this.txtIsss.Margin = new System.Windows.Forms.Padding(2);
             this.txtIsss.Name = "txtIsss";
             this.txtIsss.Size = new System.Drawing.Size(68, 25);
@@ -385,22 +430,23 @@
             this.label17.TabIndex = 25;
             this.label17.Text = "Aguinaldo";
             // 
-            // btnLimpiar
+            // btnGenerarConstancia
             // 
-            this.btnLimpiar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
-            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLimpiar.Location = new System.Drawing.Point(48, 269);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(192, 29);
-            this.btnLimpiar.TabIndex = 36;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            this.btnGenerarConstancia.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnGenerarConstancia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.btnGenerarConstancia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerarConstancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarConstancia.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarConstancia.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnGenerarConstancia.Location = new System.Drawing.Point(24, 90);
+            this.btnGenerarConstancia.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGenerarConstancia.Name = "btnGenerarConstancia";
+            this.btnGenerarConstancia.Size = new System.Drawing.Size(192, 29);
+            this.btnGenerarConstancia.TabIndex = 37;
+            this.btnGenerarConstancia.Text = "Generar Constancia";
+            this.btnGenerarConstancia.UseVisualStyleBackColor = false;
+            this.btnGenerarConstancia.Visible = false;
+            this.btnGenerarConstancia.Click += new System.EventHandler(this.button2_Click);
             // 
             // txt13
             // 
@@ -540,7 +586,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(82, 188);
+            this.panel1.Location = new System.Drawing.Point(85, 188);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(541, 310);
@@ -552,16 +598,16 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = null;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.Format = "N2";
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
@@ -780,52 +826,6 @@
             this.label3.Size = new System.Drawing.Size(70, 20);
             this.label3.TabIndex = 12;
             this.label3.Text = "Febrero:";
-            // 
-            // label13
-            // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 7);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(156, 20);
-            this.label13.TabIndex = 39;
-            this.label13.Text = "Ingresos Gravados :";
-            // 
-            // txtAguinaldo
-            // 
-            this.txtAguinaldo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtAguinaldo.Enabled = false;
-            this.txtAguinaldo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAguinaldo.Location = new System.Drawing.Point(206, 33);
-            this.txtAguinaldo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtAguinaldo.Name = "txtAguinaldo";
-            this.txtAguinaldo.Size = new System.Drawing.Size(68, 25);
-            this.txtAguinaldo.TabIndex = 38;
-            // 
-            // label21
-            // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(15, 65);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(190, 18);
-            this.label21.TabIndex = 41;
-            this.label21.Text = "Total, Ingresos Gravados:";
-            // 
-            // txtIngresoGravado
-            // 
-            this.txtIngresoGravado.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtIngresoGravado.Enabled = false;
-            this.txtIngresoGravado.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIngresoGravado.Location = new System.Drawing.Point(206, 62);
-            this.txtIngresoGravado.Margin = new System.Windows.Forms.Padding(2);
-            this.txtIngresoGravado.Name = "txtIngresoGravado";
-            this.txtIngresoGravado.Size = new System.Drawing.Size(68, 25);
-            this.txtIngresoGravado.TabIndex = 40;
             // 
             // Form4
             // 

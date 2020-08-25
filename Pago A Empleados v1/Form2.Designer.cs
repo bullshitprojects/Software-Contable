@@ -125,9 +125,9 @@
             this.panel6.Controls.Add(this.label7);
             this.panel6.Controls.Add(this.textNeta);
             this.panel6.Controls.Add(this.label10);
-            this.panel6.Location = new System.Drawing.Point(386, 232);
+            this.panel6.Location = new System.Drawing.Point(380, 232);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(462, 181);
+            this.panel6.Size = new System.Drawing.Size(451, 181);
             this.panel6.TabIndex = 32;
             // 
             // btnLimpiar
@@ -138,7 +138,7 @@
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLimpiar.Location = new System.Drawing.Point(213, 134);
+            this.btnLimpiar.Location = new System.Drawing.Point(207, 134);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(80, 29);
@@ -155,7 +155,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(33, 134);
+            this.button1.Location = new System.Drawing.Point(27, 134);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 29);
@@ -169,7 +169,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(10, 103);
+            this.label8.Location = new System.Drawing.Point(4, 103);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(221, 18);
@@ -180,7 +180,7 @@
             // 
             this.textComputado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textComputado.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textComputado.Location = new System.Drawing.Point(360, 65);
+            this.textComputado.Location = new System.Drawing.Point(354, 65);
             this.textComputado.Margin = new System.Windows.Forms.Padding(2);
             this.textComputado.Name = "textComputado";
             this.textComputado.Size = new System.Drawing.Size(90, 25);
@@ -191,7 +191,7 @@
             // 
             this.textResult.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textResult.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textResult.Location = new System.Drawing.Point(360, 100);
+            this.textResult.Location = new System.Drawing.Point(354, 100);
             this.textResult.Margin = new System.Windows.Forms.Padding(2);
             this.textResult.Name = "textResult";
             this.textResult.Size = new System.Drawing.Size(90, 25);
@@ -202,7 +202,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(9, 30);
+            this.label7.Location = new System.Drawing.Point(3, 30);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 20);
@@ -214,7 +214,7 @@
             // 
             this.textNeta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textNeta.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNeta.Location = new System.Drawing.Point(360, 28);
+            this.textNeta.Location = new System.Drawing.Point(354, 28);
             this.textNeta.Margin = new System.Windows.Forms.Padding(2);
             this.textNeta.Name = "textNeta";
             this.textNeta.Size = new System.Drawing.Size(90, 25);
@@ -226,7 +226,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(9, 68);
+            this.label10.Location = new System.Drawing.Point(3, 68);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(330, 20);
@@ -239,9 +239,9 @@
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.textPagoCuenta);
-            this.panel5.Location = new System.Drawing.Point(386, 17);
+            this.panel5.Location = new System.Drawing.Point(380, 17);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(462, 186);
+            this.panel5.Size = new System.Drawing.Size(451, 186);
             this.panel5.TabIndex = 31;
             // 
             // label11
@@ -249,7 +249,7 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(10, 50);
+            this.label11.Location = new System.Drawing.Point(4, 50);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(57, 18);
@@ -261,7 +261,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(41, 81);
+            this.label9.Location = new System.Drawing.Point(35, 81);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(125, 20);
@@ -272,7 +272,7 @@
             // 
             this.textPagoCuenta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textPagoCuenta.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPagoCuenta.Location = new System.Drawing.Point(200, 78);
+            this.textPagoCuenta.Location = new System.Drawing.Point(194, 78);
             this.textPagoCuenta.Margin = new System.Windows.Forms.Padding(2);
             this.textPagoCuenta.Name = "textPagoCuenta";
             this.textPagoCuenta.Size = new System.Drawing.Size(139, 25);
@@ -286,7 +286,7 @@
             this.panel3.Controls.Add(this.textColegio);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.textMedicos);
-            this.panel3.Location = new System.Drawing.Point(30, 232);
+            this.panel3.Location = new System.Drawing.Point(24, 232);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(342, 181);
             this.panel3.TabIndex = 30;
@@ -353,7 +353,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtSueldos);
-            this.panel2.Location = new System.Drawing.Point(30, 17);
+            this.panel2.Location = new System.Drawing.Point(24, 17);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(342, 186);
             this.panel2.TabIndex = 29;
