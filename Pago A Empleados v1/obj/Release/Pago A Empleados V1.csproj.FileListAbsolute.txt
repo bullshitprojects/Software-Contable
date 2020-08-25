@@ -1,0 +1,40 @@
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\Sistema de Pago a Empleados.exe.config
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\Sistema de Pago a Empleados.exe
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\Sistema de Pago a Empleados.pdb
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\Common.Logging.Core.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\Common.Logging.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.barcodes.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.forms.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.io.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.kernel.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.layout.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.pdfa.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.sign.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.styledxmlparser.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.svg.dll
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\BouncyCastle.Crypto.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\Common.Logging.pdb
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\Common.Logging.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\Common.Logging.Core.pdb
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\Common.Logging.Core.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.barcodes.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.forms.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.io.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.kernel.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.layout.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.pdfa.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.sign.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.styledxmlparser.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Release\itext.svg.xml
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Release\SistemaDePagoEmpleados.Form1.resources
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Release\SistemaDePagoEmpleados.Form2.resources
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Release\SistemaDePagoEmpleados.Form3.resources
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Release\SistemaDePagoEmpleados.Form4.resources
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Release\SistemaDePagoEmpleados.FormPrincipal.resources
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Release\SistemaDePagoEmpleados.Properties.Resources.resources
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Release\Pago A Empleados V1.csproj.GenerateResource.cache
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Release\Pago A Empleados V1.csproj.CoreCompileInputs.cache
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Release\Pago A Empleados V1.csproj.CopyComplete
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Release\Sistema de Pago a Empleados.exe
+C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Release\Sistema de Pago a Empleados.pdb

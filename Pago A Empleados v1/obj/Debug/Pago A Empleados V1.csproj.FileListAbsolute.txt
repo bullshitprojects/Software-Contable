@@ -95,7 +95,6 @@ C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\
 C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.sign.xml
 C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.styledxmlparser.xml
 C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\bin\Debug\itext.svg.xml
-C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\Pago A Empleados V1.csprojAssemblyReference.cache
 C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\SistemaDePagoEmpleados.Form1.resources
 C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\SistemaDePagoEmpleados.Form2.resources
 C:\Users\julio\Documents\GitHub\Software-Contable\Pago A Empleados v1\obj\Debug\SistemaDePagoEmpleados.Form3.resources
