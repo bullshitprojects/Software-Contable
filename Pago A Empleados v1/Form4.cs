@@ -18,6 +18,34 @@ namespace SistemaDePagoEmpleados
         List<DeduccionMensual> dedAnual = new List<DeduccionMensual>();
         double totalAfp = 0, totalRenta = 0, totalIsss = 0, totalGravado = 0, totalSalario = 0,aguinaldo = 0, aguinaldoGravado = 0, aguinaldoNoGravado = 0, totalSalarioGravado =0;
 
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            deducciones.Visible = false;
+            dataGridView1.Visible = false;
+            btnGenerarConstancia.Visible = false;
+            txt1.Text = "";
+            txt2.Text = "";
+            txt3.Text = "";
+            txt4.Text = "";
+            txt5.Text = "";
+            txt6.Text = "";
+            txt7.Text = "";
+            txt8.Text = "";
+            txt9.Text = "";
+            txt10.Text = "";
+            txt11.Text = "";
+            txt12.Text = "";
+            txt13.Text = "";
+            txtSalario.Text = "";
+            txtAguinaldo.Text = "";
+            txtIngresoGravado.Text = "";
+            txtAfp.Text = "";
+            txtIsss.Text = "";
+            txtAguinaldoNoGravado.Text = "";
+            txtMontoGravado.Text = "";
+            txtRenta.Text = "";
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             DocumentGenerator doc = new DocumentGenerator();
@@ -147,16 +175,19 @@ namespace SistemaDePagoEmpleados
                     totalSalario += mensual.salarioBruto;
                 }
                 totalSalarioGravado = totalSalario + aguinaldo;
+
+                txtSalario.Text = Convert.ToString(Math.Round(totalSalario, 2));
+                txtAguinaldo.Text = Convert.ToString(Math.Round(aguinaldo, 2));
+                txtIngresoGravado.Text= Convert.ToString(Math.Round(totalSalario + aguinaldo, 2));
+
                 txtAfp.Text = Convert.ToString(Math.Round(totalAfp,2));
                 txtIsss.Text=Convert.ToString(Math.Round(totalIsss, 2));
-                txtRenta.Text = Convert.ToString(Math.Round(totalRenta, 2));
                 txtAguinaldoNoGravado.Text = Convert.ToString(Math.Round(aguinaldoNoGravado, 2));
+
                 txtMontoGravado.Text = Convert.ToString(Math.Round(totalGravado + aguinaldoGravado, 2));
-                txtSalario.Text = Convert.ToString(Math.Round(totalSalario, 2));
-                txtAguinaldoGravado.Text = Convert.ToString(Math.Round(aguinaldoGravado, 2));
 
+                txtRenta.Text = Convert.ToString(Math.Round(totalRenta, 2));
                 
-
 
                 //llenado de tablas
                 dataGridView1.DataSource = null;
@@ -164,6 +195,7 @@ namespace SistemaDePagoEmpleados
 
                 deducciones.Visible = true;
                 dataGridView1.Visible = true;
+                btnGenerarConstancia.Visible = true;
             }
            catch (Exception)
             {
