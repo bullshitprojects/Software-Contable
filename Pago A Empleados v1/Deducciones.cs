@@ -9,7 +9,15 @@ namespace ModernGUI_V3
 {
     class Deducciones
     {
-             
+        //Variable que almacena la observación
+        private string observacion;
+
+        public string Observacion
+        {
+            get { return observacion; }
+            set { observacion = value; }
+        }
+
         //Metodo para calcular el AFP
         public double CalcularAFP (double ingresos)
         {  
@@ -38,21 +46,25 @@ namespace ModernGUI_V3
 
             if (rentaImponible > 0.01 & rentaImponible <= 472)
             {
+                observacion = "Sin Retencion de Renta";
                 return 0;
             }
             else if (rentaImponible > 472 & rentaImponible <= 895.24)
             {
                 double renta = ((rentaImponible - 472) * 0.10) + 17.67;
+                observacion = "Aplica El Tramo 2 Del ISR reteniendo el 10% sobre el excedente de $472.00 mas una cuota fija de $ 17.67";
                 return renta;
             }
             else if (rentaImponible > 895.25 & rentaImponible <= 2038.10)
             {
                 double renta = ((rentaImponible - 895.24) * 0.20) + 60;
+                observacion = "Aplica El Tramo 3 Del ISR reteniendo el 20% sobre el excedente de $895.25 mas una cuota fija de $ 60.00";
                 return renta;
             }
             else if (rentaImponible > 2038.11)
             {
                 double renta = ((rentaImponible - 2038.10) * 0.30) + 288.57;
+                observacion = "Aplica El Tramo 4 Del ISR reteniendo el 30% sobre el excedente de $2038.10  mas una cuota fija de $ 288.57";
                 return renta;
             }
             else
