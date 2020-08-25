@@ -34,16 +34,17 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textResult = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textComputado = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textComputado = new System.Windows.Forms.TextBox();
+            this.textResult = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.textNeta = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textPagoCuenta = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textNeta = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSueldos = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -104,6 +104,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.panel3);
@@ -124,7 +125,7 @@
             this.panel6.Controls.Add(this.label7);
             this.panel6.Controls.Add(this.textNeta);
             this.panel6.Controls.Add(this.label10);
-            this.panel6.Location = new System.Drawing.Point(359, 233);
+            this.panel6.Location = new System.Drawing.Point(386, 232);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(462, 181);
             this.panel6.TabIndex = 32;
@@ -146,50 +147,6 @@
             this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(10, 103);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(221, 18);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "TOTAL A PAGAR O DEVOLVER";
-            // 
-            // textResult
-            // 
-            this.textResult.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textResult.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textResult.Location = new System.Drawing.Point(360, 100);
-            this.textResult.Margin = new System.Windows.Forms.Padding(2);
-            this.textResult.Name = "textResult";
-            this.textResult.Size = new System.Drawing.Size(90, 25);
-            this.textResult.TabIndex = 28;
-            // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label11);
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Controls.Add(this.textPagoCuenta);
-            this.panel5.Location = new System.Drawing.Point(359, 18);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(462, 186);
-            this.panel5.TabIndex = 31;
-            // 
-            // textComputado
-            // 
-            this.textComputado.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textComputado.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textComputado.Location = new System.Drawing.Point(360, 65);
-            this.textComputado.Margin = new System.Windows.Forms.Padding(2);
-            this.textComputado.Name = "textComputado";
-            this.textComputado.Size = new System.Drawing.Size(90, 25);
-            this.textComputado.TabIndex = 35;
-            this.textComputado.TextChanged += new System.EventHandler(this.textComputado_TextChanged);
-            // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -207,6 +164,39 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(10, 103);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(221, 18);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "TOTAL A PAGAR O DEVOLVER";
+            // 
+            // textComputado
+            // 
+            this.textComputado.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textComputado.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textComputado.Location = new System.Drawing.Point(360, 65);
+            this.textComputado.Margin = new System.Windows.Forms.Padding(2);
+            this.textComputado.Name = "textComputado";
+            this.textComputado.Size = new System.Drawing.Size(90, 25);
+            this.textComputado.TabIndex = 35;
+            this.textComputado.TextChanged += new System.EventHandler(this.textComputado_TextChanged);
+            // 
+            // textResult
+            // 
+            this.textResult.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textResult.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textResult.Location = new System.Drawing.Point(360, 100);
+            this.textResult.Margin = new System.Windows.Forms.Padding(2);
+            this.textResult.Name = "textResult";
+            this.textResult.Size = new System.Drawing.Size(90, 25);
+            this.textResult.TabIndex = 28;
+            // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -219,6 +209,52 @@
             this.label7.TabIndex = 20;
             this.label7.Text = "Renta Neta";
             this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // textNeta
+            // 
+            this.textNeta.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textNeta.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNeta.Location = new System.Drawing.Point(360, 28);
+            this.textNeta.Margin = new System.Windows.Forms.Padding(2);
+            this.textNeta.Name = "textNeta";
+            this.textNeta.Size = new System.Drawing.Size(90, 25);
+            this.textNeta.TabIndex = 25;
+            this.textNeta.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(9, 68);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(330, 20);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "Impuesto Computado de la Renta Ordinario";
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label11);
+            this.panel5.Controls.Add(this.label9);
+            this.panel5.Controls.Add(this.textPagoCuenta);
+            this.panel5.Location = new System.Drawing.Point(386, 17);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(462, 186);
+            this.panel5.TabIndex = 31;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(10, 50);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(57, 18);
+            this.label11.TabIndex = 36;
+            this.label11.Text = "RENTA ";
             // 
             // label9
             // 
@@ -242,29 +278,6 @@
             this.textPagoCuenta.Size = new System.Drawing.Size(139, 25);
             this.textPagoCuenta.TabIndex = 23;
             // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(9, 68);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(330, 20);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "Impuesto Computado de la Renta Ordinario";
-            // 
-            // textNeta
-            // 
-            this.textNeta.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textNeta.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNeta.Location = new System.Drawing.Point(360, 28);
-            this.textNeta.Margin = new System.Windows.Forms.Padding(2);
-            this.textNeta.Name = "textNeta";
-            this.textNeta.Size = new System.Drawing.Size(90, 25);
-            this.textNeta.TabIndex = 25;
-            this.textNeta.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -273,7 +286,7 @@
             this.panel3.Controls.Add(this.textColegio);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.textMedicos);
-            this.panel3.Location = new System.Drawing.Point(3, 233);
+            this.panel3.Location = new System.Drawing.Point(30, 232);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(342, 181);
             this.panel3.TabIndex = 30;
@@ -340,7 +353,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtSueldos);
-            this.panel2.Location = new System.Drawing.Point(3, 18);
+            this.panel2.Location = new System.Drawing.Point(30, 17);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(342, 186);
             this.panel2.TabIndex = 29;
@@ -378,18 +391,6 @@
             this.txtSueldos.Name = "txtSueldos";
             this.txtSueldos.Size = new System.Drawing.Size(90, 25);
             this.txtSueldos.TabIndex = 15;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(10, 50);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 18);
-            this.label11.TabIndex = 36;
-            this.label11.Text = "RENTA ";
             // 
             // Form2
             // 
