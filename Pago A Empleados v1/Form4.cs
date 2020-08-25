@@ -16,12 +16,23 @@ namespace ModernGUI_V3
         Deducciones desc = new Deducciones();
         DeduccionMensual dedMensual = new DeduccionMensual();
         List<DeduccionMensual> dedAnual = new List<DeduccionMensual>();
-        double totalAfp = 0, totalRenta = 0, totalIsss = 0, totalGravado = 0, totalSalario = 0,aguinaldo = 0, aguinaldoGravado = 0, aguinaldoNoGravado = 0;
+        double totalAfp = 0, totalRenta = 0, totalIsss = 0, totalGravado = 0, totalSalario = 0,aguinaldo = 0, aguinaldoGravado = 0, aguinaldoNoGravado = 0, totalSalarioGravado =0;
 
         private void button2_Click(object sender, EventArgs e)
         {
             DocumentGenerator doc = new DocumentGenerator();
             doc.generarConstancia(txtNombre.Text, txtNit.Text, aguinaldo, Convert.ToDouble(txtMontoGravado.Text), aguinaldo + Convert.ToDouble(txtMontoGravado.Text), totalAfp, totalIsss, aguinaldoGravado, Math.Round(totalSalario, 2));
+
+            //Variables a utilizar 
+            //Ingresos gravados / devengado = totalSalario
+            //Aguinaldo = aguinaldo
+            //total Ingresos Gravados =totalSalarioGravado
+            //Cotizacion AFP = totalAfp
+            //Cotizacion ISSS = totalIsss
+            //Aguinaldo no gravado = aguinaldoNoGravado
+            //Monto Gravado = totalGravado
+            //Impuesto sobre la renta = totalRenta
+
         }
 
         public Form4()
@@ -134,7 +145,7 @@ namespace ModernGUI_V3
                     totalGravado += mensual.salarioGravado;
                     totalSalario += mensual.salarioBruto;
                 }
-
+                totalSalarioGravado = totalSalario + aguinaldo;
                 txtAfp.Text = Convert.ToString(Math.Round(totalAfp,2));
                 txtIsss.Text=Convert.ToString(Math.Round(totalIsss, 2));
                 txtRenta.Text = Convert.ToString(Math.Round(totalRenta, 2));
@@ -142,6 +153,9 @@ namespace ModernGUI_V3
                 txtMontoGravado.Text = Convert.ToString(Math.Round(totalGravado + aguinaldoGravado, 2));
                 txtSalario.Text = Convert.ToString(Math.Round(totalSalario, 2));
                 txtAguinaldoGravado.Text = Convert.ToString(Math.Round(aguinaldoGravado, 2));
+
+                
+
 
                 //llenado de tablas
                 dataGridView1.DataSource = null;
