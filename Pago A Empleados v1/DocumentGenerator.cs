@@ -17,7 +17,7 @@ using Common.Logging.Factory;
 using iText.Kernel.Font;
 using iText.IO.Font;
 
-namespace ModernGUI_V3
+namespace SistemaDePagoEmpleados
 {
     class DocumentGenerator
     {
@@ -318,7 +318,7 @@ namespace ModernGUI_V3
             }
         }
 
-        public void generarConstancia(String emp, String nit, double aguinaldo, double montogravado, double tIngresos, double afp, double isss, double aguinaldonogravado, double totalSalario)
+        public void generarConstancia(String emp, String nit, double totalSalario, double aguinaldo, double totalSalarioGravado, double afp, double isss, double aguinaldoNgravado, double montoGravado, double renta)
         {
             var exportFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             path = System.IO.Path.Combine(exportFolder, "Constancia - " + emp + " - " + DateTime.Now.Year.ToString() + ".pdf");
@@ -371,7 +371,7 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Total, Ingresos Gravados")).AddStyle(estilos[104]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + tIngresos)).AddStyle(estilos[103]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + totalSalarioGravado)).AddStyle(estilos[103]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph(" ")).AddStyle(estilos[101]);
                     tabla.AddCell(contenido);
@@ -395,7 +395,7 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 2).Add(new Paragraph("Aguinaldo no Gravado")).AddStyle(estilos[101]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("-$ " + isss)).AddStyle(estilos[101]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("-$ " + aguinaldoNgravado)).AddStyle(estilos[101]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph(" ")).AddStyle(estilos[101]);
                     tabla.AddCell(contenido);
@@ -405,7 +405,7 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph("Monto Gravado")).AddStyle(estilos[104]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + montogravado)).AddStyle(estilos[103]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + montoGravado)).AddStyle(estilos[103]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph(" ")).AddStyle(estilos[101]);
                     tabla.AddCell(contenido);
@@ -415,7 +415,7 @@ namespace ModernGUI_V3
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 2).Add(new Paragraph("Impuesto sobre la renta")).AddStyle(estilos[104]);
                     tabla.AddCell(contenido);
-                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + montogravado)).AddStyle(estilos[103]);
+                    contenido = new Cell(1, 1).Add(new Paragraph("$ " + renta)).AddStyle(estilos[103]);
                     tabla.AddCell(contenido);
                     contenido = new Cell(1, 1).Add(new Paragraph(" ")).AddStyle(estilos[101]);
                     tabla.AddCell(contenido);

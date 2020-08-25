@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ModernGUI_V3
+namespace SistemaDePagoEmpleados
 {
     public partial class Form4 : Form
     {
@@ -21,7 +21,7 @@ namespace ModernGUI_V3
         private void button2_Click(object sender, EventArgs e)
         {
             DocumentGenerator doc = new DocumentGenerator();
-            doc.generarConstancia(txtNombre.Text, txtNit.Text, aguinaldo, Convert.ToDouble(txtMontoGravado.Text), aguinaldo + Convert.ToDouble(txtMontoGravado.Text), totalAfp, totalIsss, aguinaldoGravado, Math.Round(totalSalario, 2));
+            doc.generarConstancia(txtNombre.Text, txtNit.Text,totalSalario,aguinaldo,totalSalarioGravado, totalAfp, totalIsss, aguinaldoNoGravado, totalGravado, totalRenta);
 
             //Variables a utilizar 
             //Ingresos gravados / devengado = totalSalario
@@ -32,7 +32,8 @@ namespace ModernGUI_V3
             //Aguinaldo no gravado = aguinaldoNoGravado
             //Monto Gravado = totalGravado
             //Impuesto sobre la renta = totalRenta
-
+            MessageBox.Show("Archivo guardado con éxito en: " + doc.path, "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            System.Diagnostics.Process.Start(doc.path);
         }
 
         public Form4()

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ModernGUI_V3
+namespace SistemaDePagoEmpleados
 {
     public partial class Form1 : Form
     {
@@ -88,6 +88,7 @@ namespace ModernGUI_V3
                 {
                     doc.generarBoleta(txtCargo.Text, cmbMes.Text, txtNombre.Text, Convert.ToDouble(txtSalarioBruto.Text), Math.Round(afp, 2), Math.Round(isss, 2), Math.Round(renta, 2), totaldeduciones, Math.Round(salarioneto, 2), desc.Observacion, boni);
                     MessageBox.Show("Archivo guardado con éxito en: " + doc.path, "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    System.Diagnostics.Process.Start(doc.path);
                 }
                 else
                 {
@@ -103,6 +104,11 @@ namespace ModernGUI_V3
             
         }
         private void txtSalarioBruto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

@@ -1,4 +1,4 @@
-﻿namespace ModernGUI_V3
+﻿namespace SistemaDePagoEmpleados
 {
     partial class Form1
     {
@@ -38,6 +38,8 @@
             this.btnCalcularSalario = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.resultado = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtCargo = new System.Windows.Forms.TextBox();
             this.cmbMes = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -58,8 +60,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.txtTotalIngresos = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtCargo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.resultado.SuspendLayout();
@@ -202,6 +202,28 @@
             this.resultado.Size = new System.Drawing.Size(458, 179);
             this.resultado.TabIndex = 30;
             this.resultado.Visible = false;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(30, 99);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(60, 20);
+            this.label12.TabIndex = 34;
+            this.label12.Text = "Cargo:";
+            // 
+            // txtCargo
+            // 
+            this.txtCargo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtCargo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCargo.Location = new System.Drawing.Point(137, 96);
+            this.txtCargo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(294, 25);
+            this.txtCargo.TabIndex = 33;
             // 
             // cmbMes
             // 
@@ -470,28 +492,6 @@
             this.txtTotalIngresos.Size = new System.Drawing.Size(90, 25);
             this.txtTotalIngresos.TabIndex = 24;
             // 
-            // label12
-            // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(30, 99);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 20);
-            this.label12.TabIndex = 34;
-            this.label12.Text = "Cargo:";
-            // 
-            // txtCargo
-            // 
-            this.txtCargo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtCargo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCargo.Location = new System.Drawing.Point(137, 96);
-            this.txtCargo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(294, 25);
-            this.txtCargo.TabIndex = 33;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -503,6 +503,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

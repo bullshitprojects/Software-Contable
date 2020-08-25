@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ModernGUI_V3
+namespace SistemaDePagoEmpleados
 {
     public partial class Form2 : Form
     {

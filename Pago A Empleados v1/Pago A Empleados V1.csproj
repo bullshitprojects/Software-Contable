@@ -7,7 +7,7 @@
     <ProjectGuid>{E0F5AD57-4FF3-4A5F-AC3E-FA1585F7B566}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ModernGUI_V3</RootNamespace>
+    <RootNamespace>SistemaDePagoEmpleados</RootNamespace>
     <AssemblyName>Sistema de Pago a Empleados</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -36,7 +36,7 @@
     <ApplicationIcon>accounting.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ModernGUI_V3.Program</StartupObject>
+    <StartupObject>SistemaDePagoEmpleados.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
@@ -146,6 +146,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

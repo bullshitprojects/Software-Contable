@@ -1,4 +1,4 @@
-﻿namespace ModernGUI_V3
+﻿namespace SistemaDePagoEmpleados
 {
     partial class Form2
     {

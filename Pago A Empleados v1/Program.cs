@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ModernGUI_V3
+namespace SistemaDePagoEmpleados
 {
     static class Program
     {

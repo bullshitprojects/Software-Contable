@@ -1,4 +1,4 @@
-﻿namespace ModernGUI_V3
+﻿namespace SistemaDePagoEmpleados
 {
     partial class Form3
     {
@@ -705,6 +705,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.semestre2.ResumeLayout(false);

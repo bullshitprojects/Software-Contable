@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ModernGUI_V3
+namespace SistemaDePagoEmpleados
 {
     public partial class Form3 : Form
     {
@@ -99,6 +99,11 @@ namespace ModernGUI_V3
         }
 
         private void txt1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
         {
 
         }
