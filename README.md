@@ -6,6 +6,6 @@ Proyecto realizado por estudiantes de Ingeniería en Desarrollo de Software de l
 
 [Descargalo Aquí](Sistema%20Pago%20a%20Empleados/Debug/Sistema%20Pago%20a%20Empleados.msi)
 
-## Instrucciones
+## Instrucciones de descarga
 
 ![](Instrucciones.gif)
